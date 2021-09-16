@@ -29,3 +29,8 @@ body{
     border-radius: 15px;
     box-shadow: -1px 3px 8px 6px #e7e7e7;
 }
+.input{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}

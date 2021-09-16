@@ -23,6 +23,9 @@
             <section :class="formatting[0]">
                 <h1 :class="formatting[1]" v-bind:title="message">{{message}}</h1>
                 <img :src="image.imageUrl" width="130px" :alt="image.imageDescription">
+                <div class="input">
+                    <input v-model="image.imageUrl" type="text" placeholder="Inserisci url img:">
+                </div>
             </section>
         </div>
         
