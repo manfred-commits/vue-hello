@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: brown;
+    font-family: 'Fredoka One', cursive
+}
+.full-page{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; 
+}
+.h1-formatting{
+    width: 100%;
+    text-align: center;
+}
+.center-formatting{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    padding: 10px;    
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: -1px 3px 8px 6px #e7e7e7;
+}

@@ -17,9 +17,11 @@ const application = new Vue({
         message: "Hello there!",
 
         // 4.Aggiungo alla pagina un’immagine, presa anch’essa da un data, collegando le proprietà di un tag img alle keyword image & imageDescription.
-
-        image: "https://vuejs.org/images/logo.png",
-        imageDescription: "vueJs logo"
+        formatting:["center-formatting", "h1-formatting"],
+        image:{
+            imageUrl: "https://vuejs.org/images/logo.png",
+            imageDescription: "vueJs logo"
+        }
     }
 
 });
