@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <!-- /link to font -->
 
+        <!-- link to favicon -->
+        <link rel="icon" type="image/png" href="https://vuejs.org/images/logo.png"/>
 
         <!-- link to css -->
         <link rel="stylesheet" href="./css/style.css">
@@ -20,13 +22,14 @@
     </head>
     <body>
         <div id="application" class="full-page">
-            <section :class="formatting[0]">
-                <h1 :class="formatting[1]" v-bind:title="message">{{message}}</h1>
+            <section class="center-formatting" :class= "color">
+                <h1 class="h1-formatting" v-bind:title="message">{{message}}</h1>
                 <img :src="image.imageUrl" width="130px" :alt="image.imageDescription">
                 <div class="input">
                     <label for="imgUrl">Inserisci un url, per cambiare l'immagine:</label>
                     <input v-model="image.imageUrl" type="text" name="imgUrl">
                 </div>
+                <button id="btn" @click="colorChange()">Change</button>
             </section>
         </div>
         
